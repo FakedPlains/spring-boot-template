@@ -1,4 +1,4 @@
-package com.example.springboottemplate;
+package cloud.zfwproject.springboottemplate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

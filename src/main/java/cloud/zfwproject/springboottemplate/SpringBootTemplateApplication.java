@@ -1,4 +1,4 @@
-package com.example.springboottemplate;
+package cloud.zfwproject.springboottemplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
