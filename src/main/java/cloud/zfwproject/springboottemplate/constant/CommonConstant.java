@@ -16,4 +16,19 @@ public interface CommonConstant {
      * 降序
      */
     String SORT_ORDER_DESC = " descend";
+
+    /**
+     * 用户名前缀
+     */
+    String USER_NAME_PREFIX = "demo_";
+
+    /**
+     * Redis key 前缀
+     */
+    String REDIS_KEY_PREFIX = "demo:";
+
+    /**
+     * 请求头 Token 标识
+     */
+    String REQUEST_HEADER_TOKEN = "authorization";
 }
