@@ -19,6 +19,7 @@ public enum ResponseCode {
     FAIL("20001", "failed"),
 
     INVALID_PARAMS("20002", "invalid parameters"),
+    REQUEST_TOO_FAST("20003", "request too fast"),
 
     HTTP_STATUS_200("200", "ok"),
     HTTP_STATUS_400("400", "request error"),

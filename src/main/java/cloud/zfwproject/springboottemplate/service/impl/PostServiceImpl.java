@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 * @description 针对表【post(帖子)】的数据库操作Service实现
 * @createDate 2023-03-05 22:13:09
 */
-@Service
+@Service("postService")
 public class PostServiceImpl extends ServiceImpl<PostMapper, Post>
     implements PostService{
 

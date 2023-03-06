@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 * @description 针对表【user(用户)】的数据库操作Service实现
 * @createDate 2023-03-05 22:12:53
 */
-@Service
+@Service("userService")
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     implements UserService{
 

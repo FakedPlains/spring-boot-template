@@ -1,6 +1,9 @@
 package cloud.zfwproject.springboottemplate.controller;
 
+import cloud.zfwproject.springboottemplate.service.PostService;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author 46029
@@ -10,4 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class PostController {
+
+    @Resource
+    private PostService postService;
+
 }

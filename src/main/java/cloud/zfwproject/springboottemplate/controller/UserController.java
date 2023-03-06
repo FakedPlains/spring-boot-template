@@ -1,6 +1,9 @@
 package cloud.zfwproject.springboottemplate.controller;
 
+import cloud.zfwproject.springboottemplate.service.UserService;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author 46029
@@ -10,4 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class UserController {
+
+    @Resource
+    private UserService userService;
+
 }
