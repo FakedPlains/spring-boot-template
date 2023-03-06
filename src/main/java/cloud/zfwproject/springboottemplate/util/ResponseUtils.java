@@ -47,22 +47,20 @@ public class ResponseUtils {
      * @return 响应结果
      */
     public static <T extends Serializable> ResponseResult<T> fail(String message) {
-        return fail(null, message);
+        return fail(ResponseCode.FAIL.getCode(), message);
     }
 
     /**
      * 包装失败响应结果
      *
-     * @param data    响应数据
      * @param message 错误信息
      * @param <T>     响应数据类型
      * @return 响应结果
      */
-    public static <T> ResponseResult<T> fail(T data, String message) {
+    public static <T> ResponseResult<T> fail(String code, String message) {
         return ResponseResult.<T>builder()
-                .data(data)
+                .code(code)
                 .message(message)
-                .code(ResponseCode.FAIL.getCode())
                 .timestamp(System.currentTimeMillis())
                 .build();
     }
@@ -70,14 +68,12 @@ public class ResponseUtils {
     /**
      * 包装失败响应结果
      *
-     * @param data         响应数据
      * @param responseCode 错误状态
      * @param <T>          响应数据类型
      * @return 响应结果
      */
-    public static <T> ResponseResult<T> fail(T data, ResponseCode responseCode) {
+    public static <T> ResponseResult<T> fail(ResponseCode responseCode) {
         return ResponseResult.<T>builder()
-                .data(data)
                 .code(responseCode.getCode())
                 .message(responseCode.getMessage())
                 .timestamp(System.currentTimeMillis())
