@@ -8,7 +8,6 @@ import java.util.Date;
 
 /**
  * 帖子
- * @TableName post
  */
 @TableName(value ="post")
 @Data
