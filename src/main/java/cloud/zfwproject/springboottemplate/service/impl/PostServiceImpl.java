@@ -1,9 +1,9 @@
-package generator.service.impl;
+package cloud.zfwproject.springboottemplate.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import generator.domain.Post;
-import generator.service.PostService;
-import generator.mapper.PostMapper;
+import cloud.zfwproject.springboottemplate.model.po.Post;
+import cloud.zfwproject.springboottemplate.service.PostService;
+import cloud.zfwproject.springboottemplate.mapper.PostMapper;
 import org.springframework.stereotype.Service;
 
 /**

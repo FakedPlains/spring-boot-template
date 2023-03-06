@@ -1,6 +1,6 @@
-package generator.service;
+package cloud.zfwproject.springboottemplate.service;
 
-import generator.domain.Post;
+import cloud.zfwproject.springboottemplate.model.po.Post;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

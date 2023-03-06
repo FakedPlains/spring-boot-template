@@ -1,9 +1,9 @@
-package generator.service.impl;
+package cloud.zfwproject.springboottemplate.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import generator.domain.User;
-import generator.service.UserService;
-import generator.mapper.UserMapper;
+import cloud.zfwproject.springboottemplate.model.po.User;
+import cloud.zfwproject.springboottemplate.service.UserService;
+import cloud.zfwproject.springboottemplate.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 /**
